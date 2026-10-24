@@ -1,69 +1,510 @@
 {
-  "site": { "name": "חדשות אייל", "keep_days": 7, "refresh_minutes": 30 },
+  "site": {
+    "name": "חדשות אייל",
+    "keep_days": 7,
+    "refresh_minutes": 30
+  },
   "topics": [
     {
-      "id": "football", "name": "כדורגל", "icon": "⚽", "color": "#34d399",
-      "sections": [ { "id": "il", "name": "ישראל" }, { "id": "world", "name": "עולם" } ],
+      "id": "football",
+      "name": "כדורגל",
+      "icon": "⚽",
+      "color": "#34d399",
+      "sections": [
+        {
+          "id": "il",
+          "name": "ישראל"
+        },
+        {
+          "id": "world",
+          "name": "עולם"
+        }
+      ],
       "teams": [
-        { "id": "haifa",  "name": "מכבי חיפה",        "short": "חיפה",   "color": "#16a34a", "keywords": ["מכבי חיפה", "Maccabi Haifa"] },
-        { "id": "milan",  "name": "מילאן",             "short": "מילאן",  "color": "#dc2626", "keywords": ["מילאן", "AC Milan", "Milan ", "Rossoneri"] },
-        { "id": "barca",  "name": "ברצלונה",           "short": "ברסה",   "color": "#1d4ed8", "keywords": ["ברצלונה", "ברסה", "Barcelona", "Barça", "Barca"] },
-        { "id": "united", "name": "מנצ'סטר יונייטד",   "short": "יונייטד","color": "#b91c1c", "keywords": ["מנצ'סטר יונייטד", "מנצ׳סטר יונייטד", "יונייטד", "Manchester United", "Man Utd", "Man United", "Old Trafford"] }
+        {
+          "id": "haifa",
+          "name": "מכבי חיפה",
+          "short": "חיפה",
+          "color": "#16a34a",
+          "keywords": [
+            "מכבי חיפה",
+            "Maccabi Haifa"
+          ]
+        },
+        {
+          "id": "milan",
+          "name": "מילאן",
+          "short": "מילאן",
+          "color": "#dc2626",
+          "keywords": [
+            "מילאן",
+            "AC Milan",
+            "Milan ",
+            "Rossoneri"
+          ]
+        },
+        {
+          "id": "barca",
+          "name": "ברצלונה",
+          "short": "ברסה",
+          "color": "#1d4ed8",
+          "keywords": [
+            "ברצלונה",
+            "ברסה",
+            "Barcelona",
+            "Barça",
+            "Barca"
+          ]
+        },
+        {
+          "id": "united",
+          "name": "מנצ'סטר יונייטד",
+          "short": "יונייטד",
+          "color": "#b91c1c",
+          "keywords": [
+            "מנצ'סטר יונייטד",
+            "מנצ׳סטר יונייטד",
+            "יונייטד",
+            "Manchester United",
+            "Man Utd",
+            "Man United",
+            "Old Trafford"
+          ]
+        }
       ],
       "leagues": [
-        { "id": "ligat",  "name": "ליגת העל",        "keywords": ["ליגת העל", "ליגת ג'פניקה", "Ligat Ha'al", "Israeli Premier League", "Israel Premier League"] },
-        { "id": "ucl",    "name": "ליגת האלופות",    "keywords": ["ליגת האלופות", "Champions League"] },
-        { "id": "uel",    "name": "הליגה האירופית",  "keywords": ["הליגה האירופית", "ליגה אירופית", "Europa League"] },
-        { "id": "uecl",   "name": "קונפרנס ליג",      "keywords": ["קונפרנס", "Conference League"] },
-        { "id": "epl",    "name": "פרמייר ליג",       "keywords": ["פרמייר ליג", "פרמייר-ליג", "הפרמייר", "Premier League", "Arsenal", "Liverpool", "Chelsea", "Tottenham", "Manchester City", "Man City", "Aston Villa", "Newcastle", "Everton", "West Ham"] },
-        { "id": "laliga", "name": "ליגה ספרדית",      "keywords": ["הליגה הספרדית", "ליגה ספרדית", "לה ליגה", "La Liga", "LaLiga", "Real Madrid", "Atletico", "Atlético", "Barcelona", "ריאל מדריד", "אתלטיקו"] },
-        { "id": "seriea", "name": "ליגה איטלקית",     "keywords": ["הליגה האיטלקית", "ליגה איטלקית", "סרייה א", "Serie A", "Inter", "Juventus", "Napoli", "Roma", "Lazio", "Atalanta", "Milan", "יובנטוס", "אינטר", "נאפולי"] },
-        { "id": "bundes", "name": "ליגה גרמנית",      "keywords": ["הליגה הגרמנית", "ליגה גרמנית", "בונדסליגה", "Bundesliga", "Bayern", "Dortmund", "Leverkusen", "באיירן", "דורטמונד"] },
-        { "id": "ligue1", "name": "ליגה צרפתית",      "keywords": ["הליגה הצרפתית", "ליגה צרפתית", "ליג 1", "Ligue 1", "PSG", "Paris Saint-Germain", "Marseille", "פריז סן ז'רמן", "פ.ס.ז", "מארסיי"] }
+        {
+          "id": "ligat",
+          "name": "ליגת העל",
+          "keywords": [
+            "ליגת העל",
+            "ליגת ג'פניקה",
+            "Ligat Ha'al",
+            "Israeli Premier League",
+            "Israel Premier League"
+          ]
+        },
+        {
+          "id": "ucl",
+          "name": "ליגת האלופות",
+          "keywords": [
+            "ליגת האלופות",
+            "Champions League"
+          ]
+        },
+        {
+          "id": "uel",
+          "name": "הליגה האירופית",
+          "keywords": [
+            "הליגה האירופית",
+            "ליגה אירופית",
+            "Europa League"
+          ]
+        },
+        {
+          "id": "uecl",
+          "name": "קונפרנס ליג",
+          "keywords": [
+            "קונפרנס",
+            "Conference League"
+          ]
+        },
+        {
+          "id": "epl",
+          "name": "פרמייר ליג",
+          "keywords": [
+            "פרמייר ליג",
+            "פרמייר-ליג",
+            "הפרמייר",
+            "Premier League",
+            "Arsenal",
+            "Liverpool",
+            "Chelsea",
+            "Tottenham",
+            "Manchester City",
+            "Man City",
+            "Aston Villa",
+            "Newcastle",
+            "Everton",
+            "West Ham"
+          ]
+        },
+        {
+          "id": "laliga",
+          "name": "ליגה ספרדית",
+          "keywords": [
+            "הליגה הספרדית",
+            "ליגה ספרדית",
+            "לה ליגה",
+            "La Liga",
+            "LaLiga",
+            "Real Madrid",
+            "Atletico",
+            "Atlético",
+            "Barcelona",
+            "ריאל מדריד",
+            "אתלטיקו"
+          ]
+        },
+        {
+          "id": "seriea",
+          "name": "ליגה איטלקית",
+          "keywords": [
+            "הליגה האיטלקית",
+            "ליגה איטלקית",
+            "סרייה א",
+            "Serie A",
+            "Inter",
+            "Juventus",
+            "Napoli",
+            "Roma",
+            "Lazio",
+            "Atalanta",
+            "Milan",
+            "יובנטוס",
+            "אינטר",
+            "נאפולי"
+          ]
+        },
+        {
+          "id": "bundes",
+          "name": "ליגה גרמנית",
+          "keywords": [
+            "הליגה הגרמנית",
+            "ליגה גרמנית",
+            "בונדסליגה",
+            "Bundesliga",
+            "Bayern",
+            "Dortmund",
+            "Leverkusen",
+            "באיירן",
+            "דורטמונד"
+          ]
+        },
+        {
+          "id": "ligue1",
+          "name": "ליגה צרפתית",
+          "keywords": [
+            "הליגה הצרפתית",
+            "ליגה צרפתית",
+            "ליג 1",
+            "Ligue 1",
+            "PSG",
+            "Paris Saint-Germain",
+            "Marseille",
+            "פריז סן ז'רמן",
+            "פ.ס.ז",
+            "מארסיי"
+          ]
+        }
       ],
       "sources": [
-        { "id": "one",       "name": "ONE",                 "section": "il",    "lang": "he", "type": "rss", "url": "https://www.one.co.il/rss" },
-        { "id": "ynet_sport","name": "ynet ספורט",          "section": "il",    "lang": "he", "type": "rss", "url": "https://www.ynet.co.il/Integration/StoryRss3.xml" },
-        { "id": "walla_sport","name": "וואלה ספורט",        "section": "il",    "lang": "he", "type": "rss", "url": "https://rss.walla.co.il/feed/3" },
-        { "id": "scores365", "name": "365scores",           "section": "il",    "lang": "he", "type": "scores365", "url": "https://webws.365scores.com/web/news/?appTypeId=5&langId=2&timezoneName=Asia/Jerusalem&userCountryId=6&sports=1" },
-        { "id": "bbc_fb",    "name": "BBC Sport",           "section": "world", "lang": "en", "type": "rss", "url": "http://feeds.bbci.co.uk/sport/football/rss.xml" },
-        { "id": "guardian_fb","name": "The Guardian",       "section": "world", "lang": "en", "type": "rss", "url": "https://www.theguardian.com/football/rss" },
-        { "id": "sky_fb",    "name": "Sky Sports",          "section": "world", "lang": "en", "type": "rss", "url": "https://www.skysports.com/rss/12040" },
-        { "id": "espn_fb",   "name": "ESPN FC",             "section": "world", "lang": "en", "type": "rss", "url": "https://www.espn.com/espn/rss/soccer/news" },
-        { "id": "fitalia",   "name": "Football Italia",     "section": "world", "lang": "en", "type": "rss", "url": "https://football-italia.net/feed/" }
+        {
+          "id": "one",
+          "name": "ONE",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://www.one.co.il/rss"
+        },
+        {
+          "id": "ynet_sport",
+          "name": "ynet ספורט",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://www.ynet.co.il/Integration/StoryRss3.xml"
+        },
+        {
+          "id": "walla_sport",
+          "name": "וואלה ספורט",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://rss.walla.co.il/feed/3"
+        },
+        {
+          "id": "scores365",
+          "name": "365scores",
+          "section": "il",
+          "lang": "he",
+          "type": "scores365",
+          "url": "https://webws.365scores.com/web/news/?appTypeId=5&langId=2&timezoneName=Asia/Jerusalem&userCountryId=6&sports=1"
+        },
+        {
+          "id": "bbc_fb",
+          "name": "BBC Sport",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "http://feeds.bbci.co.uk/sport/football/rss.xml"
+        },
+        {
+          "id": "guardian_fb",
+          "name": "The Guardian",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.theguardian.com/football/rss"
+        },
+        {
+          "id": "sky_fb",
+          "name": "Sky Sports",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.skysports.com/rss/12040"
+        },
+        {
+          "id": "espn_fb",
+          "name": "ESPN FC",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.espn.com/espn/rss/soccer/news"
+        },
+        {
+          "id": "fitalia",
+          "name": "Football Italia",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://football-italia.net/feed/"
+        }
+      ],
+      "exclude_keywords": [
+        "כדורגל נשים",
+        "ליגת הנשים",
+        "נבחרת הנשים",
+        "הנשים של",
+        "שחקנית",
+        "שחקניות",
+        "כדורגלנית",
+        "כדורגלניות",
+        "Women's",
+        "Womens",
+        "Women",
+        "WSL",
+        "NWSL",
+        "Lionesses",
+        "Female",
+        "Ladies",
+        "Frauen",
+        "Femenino",
+        "Féminine",
+        "Feminile"
       ]
     },
     {
-      "id": "news", "name": "חדשות", "icon": "📰", "color": "#60a5fa",
-      "sections": [ { "id": "il", "name": "ישראל" }, { "id": "world", "name": "עולם" } ],
+      "id": "news",
+      "name": "חדשות",
+      "icon": "📰",
+      "color": "#60a5fa",
+      "sections": [
+        {
+          "id": "il",
+          "name": "ישראל"
+        },
+        {
+          "id": "world",
+          "name": "עולם"
+        }
+      ],
       "sources": [
-        { "id": "ynet",      "name": "ynet",        "section": "il",    "lang": "he", "type": "rss", "url": "https://www.ynet.co.il/Integration/StoryRss2.xml" },
-        { "id": "ynet_flash","name": "ynet מבזקים", "section": "il",    "lang": "he", "type": "rss", "ticker": true, "url": "https://www.ynet.co.il/Integration/StoryRss1854.xml" },
-        { "id": "n12",       "name": "N12",         "section": "il",    "lang": "he", "type": "rss", "url": "https://rcs.mako.co.il/rss/news-israel.xml" },
-        { "id": "walla",     "name": "וואלה",       "section": "il",    "lang": "he", "type": "rss", "url": "https://rss.walla.co.il/feed/1" },
-        { "id": "walla_flash","name": "וואלה מבזקים","section": "il",   "lang": "he", "type": "rss", "ticker": true, "url": "https://rss.walla.co.il/feed/22" },
-        { "id": "kan",       "name": "כאן 11",      "section": "il",    "lang": "he", "type": "rss", "ticker": true, "no_body": true, "url": "https://www.kan.org.il/api/newsflash/v2/Newsflash" },
-        { "id": "hayom",     "name": "ישראל היום",  "section": "il",    "lang": "he", "type": "rss", "url": "https://www.israelhayom.co.il/rss" },
-        { "id": "bbc",       "name": "BBC",         "section": "world", "lang": "en", "type": "rss", "url": "http://feeds.bbci.co.uk/news/world/rss.xml" },
-        { "id": "guardian",  "name": "The Guardian","section": "world", "lang": "en", "type": "rss", "url": "https://www.theguardian.com/world/rss" },
-        { "id": "dw",        "name": "DW",          "section": "world", "lang": "en", "type": "rss", "url": "https://rss.dw.com/rdf/rss-en-all" },
-        { "id": "france24",  "name": "France 24",   "section": "world", "lang": "en", "type": "rss", "no_body": true, "url": "https://www.france24.com/en/rss" },
-        { "id": "npr",       "name": "NPR",         "section": "world", "lang": "en", "type": "rss", "url": "https://feeds.npr.org/1004/rss.xml" }
+        {
+          "id": "ynet",
+          "name": "ynet",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://www.ynet.co.il/Integration/StoryRss2.xml"
+        },
+        {
+          "id": "ynet_flash",
+          "name": "ynet מבזקים",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "ticker": true,
+          "url": "https://www.ynet.co.il/Integration/StoryRss1854.xml"
+        },
+        {
+          "id": "n12",
+          "name": "N12",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://rcs.mako.co.il/rss/news-israel.xml"
+        },
+        {
+          "id": "walla",
+          "name": "וואלה",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://rss.walla.co.il/feed/1"
+        },
+        {
+          "id": "walla_flash",
+          "name": "וואלה מבזקים",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "ticker": true,
+          "url": "https://rss.walla.co.il/feed/22"
+        },
+        {
+          "id": "kan",
+          "name": "כאן 11",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "ticker": true,
+          "no_body": true,
+          "url": "https://www.kan.org.il/api/newsflash/v2/Newsflash"
+        },
+        {
+          "id": "hayom",
+          "name": "ישראל היום",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://www.israelhayom.co.il/rss"
+        },
+        {
+          "id": "bbc",
+          "name": "BBC",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "http://feeds.bbci.co.uk/news/world/rss.xml"
+        },
+        {
+          "id": "guardian",
+          "name": "The Guardian",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.theguardian.com/world/rss"
+        },
+        {
+          "id": "dw",
+          "name": "DW",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://rss.dw.com/rdf/rss-en-all"
+        },
+        {
+          "id": "france24",
+          "name": "France 24",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "no_body": true,
+          "url": "https://www.france24.com/en/rss"
+        },
+        {
+          "id": "npr",
+          "name": "NPR",
+          "section": "world",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://feeds.npr.org/1004/rss.xml"
+        }
       ]
     },
     {
-      "id": "ai", "name": "AI וחדשנות", "icon": "🤖", "color": "#c084fc",
-      "sections": [ { "id": "news", "name": "חדשות" }, { "id": "official", "name": "הודעות רשמיות" } ],
+      "id": "ai",
+      "name": "AI וחדשנות",
+      "icon": "🤖",
+      "color": "#c084fc",
+      "sections": [
+        {
+          "id": "news",
+          "name": "חדשות"
+        },
+        {
+          "id": "official",
+          "name": "הודעות רשמיות"
+        }
+      ],
       "sources": [
-        { "id": "geektime",  "name": "גיקטיים",             "section": "news",     "lang": "he", "type": "rss", "url": "https://www.geektime.co.il/feed/" },
-        { "id": "techcrunch","name": "TechCrunch",          "section": "news",     "lang": "en", "type": "rss", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
-        { "id": "verge",     "name": "The Verge",           "section": "news",     "lang": "en", "type": "rss", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml" },
-        { "id": "mittr",     "name": "MIT Technology Review","section": "news",    "lang": "en", "type": "rss", "url": "https://www.technologyreview.com/feed/" },
-        { "id": "wired",     "name": "Wired",               "section": "news",     "lang": "en", "type": "rss", "url": "https://www.wired.com/feed/tag/ai/latest/rss" },
-        { "id": "decoder",   "name": "The Decoder",         "section": "news",     "lang": "en", "type": "rss", "url": "https://the-decoder.com/feed/" },
-        { "id": "ars",       "name": "Ars Technica",        "section": "news",     "lang": "en", "type": "rss", "no_body": true, "url": "https://arstechnica.com/ai/feed/" },
-        { "id": "openai",    "name": "OpenAI",              "section": "official", "lang": "en", "type": "rss", "max_age_days": 14, "url": "https://openai.com/news/rss.xml" },
-        { "id": "googleai",  "name": "Google AI",           "section": "official", "lang": "en", "type": "rss", "max_age_days": 14, "url": "https://blog.google/technology/ai/rss/" }
+        {
+          "id": "geektime",
+          "name": "גיקטיים",
+          "section": "news",
+          "lang": "he",
+          "type": "rss",
+          "url": "https://www.geektime.co.il/feed/"
+        },
+        {
+          "id": "techcrunch",
+          "name": "TechCrunch",
+          "section": "news",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+        },
+        {
+          "id": "verge",
+          "name": "The Verge",
+          "section": "news",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+        },
+        {
+          "id": "mittr",
+          "name": "MIT Technology Review",
+          "section": "news",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.technologyreview.com/feed/"
+        },
+        {
+          "id": "wired",
+          "name": "Wired",
+          "section": "news",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://www.wired.com/feed/tag/ai/latest/rss"
+        },
+        {
+          "id": "decoder",
+          "name": "The Decoder",
+          "section": "news",
+          "lang": "en",
+          "type": "rss",
+          "url": "https://the-decoder.com/feed/"
+        },
+        {
+          "id": "ars",
+          "name": "Ars Technica",
+          "section": "news",
+          "lang": "en",
+          "type": "rss",
+          "no_body": true,
+          "url": "https://arstechnica.com/ai/feed/"
+        },
+        {
+          "id": "openai",
+          "name": "OpenAI",
+          "section": "official",
+          "lang": "en",
+          "type": "rss",
+          "max_age_days": 14,
+          "url": "https://openai.com/news/rss.xml"
+        },
+        {
+          "id": "googleai",
+          "name": "Google AI",
+          "section": "official",
+          "lang": "en",
+          "type": "rss",
+          "max_age_days": 14,
+          "url": "https://blog.google/technology/ai/rss/"
+        }
       ]
     }
   ]

@@ -32,3 +32,12 @@ def tag(article, taggers, body=""):
         if hits:
             out[kind] = hits
     article["tags"] = out
+
+
+def build_excluder(topic):
+    """Articles matching any exclude keyword (title or summary) are dropped - e.g. women's football."""
+    pats = _compile(topic.get("exclude_keywords", []))
+    def excluded(article):
+        hay = article["title"] + " " + (article.get("summary") or "")
+        return any(p.search(hay) for p in pats)
+    return excluded

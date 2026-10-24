@@ -6,7 +6,7 @@ from sources import fetch_all
 from extract import extract_many
 from dedupe import cluster
 from translate import translate_pending
-from tags import build_taggers, tag
+from tags import build_taggers, tag, build_excluder
 
 MAX_EXTRACT = int(os.environ.get("MAX_EXTRACT", "150"))
 MAX_TRANSLATE_REQUESTS = int(os.environ.get("MAX_TRANSLATE_REQUESTS", "60"))
@@ -32,12 +32,22 @@ def main():
             bodies[aid] = load_json(BODY_DIR / f"{aid}.json", None)
         return bodies[aid]
 
+    # 1b. exclusions (apply to what is already stored too, so a new rule cleans history)
+    excluders = {t["id"]: build_excluder(t) for t in cfg["topics"]}
+    dropped = [aid for aid, a in index.items() if excluders[a["topic"]](a)]
+    for aid in dropped:
+        del index[aid]
+    report["excluded"] = len(dropped)
+
     # 2. fetch
     fetched, status = fetch_all(cfg)
     report["sources"] = status
     src_cfg = {s["id"]: s for t in cfg["topics"] for s in t["sources"]}
     new = []
     for a in fetched:
+        if excluders[a["topic"]](a):
+            report["excluded"] += 1
+            continue
         max_age = timedelta(days=src_cfg[a["source"]].get("max_age_days", cfg["site"].get("keep_days", 7)))
         if now - parse_iso(a["published"]) > max_age:
             continue
