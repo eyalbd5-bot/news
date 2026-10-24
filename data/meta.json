@@ -1,0 +1,290 @@
+{
+ "updated": "2026-10-24T14:47:01Z",
+ "topics": {
+  "football": {
+   "count": 244,
+   "with_body": 134,
+   "translated": 74,
+   "foreign": 132
+  },
+  "news": {
+   "count": 370,
+   "with_body": 233,
+   "translated": 93,
+   "foreign": 160
+  },
+  "ai": {
+   "count": 126,
+   "with_body": 21,
+   "translated": 20,
+   "foreign": 96
+  }
+ },
+ "sources": [
+  {
+   "id": "one",
+   "name": "ONE",
+   "ok": true,
+   "count": 53,
+   "error": null,
+   "seconds": 0.4
+  },
+  {
+   "id": "ynet_sport",
+   "name": "ynet ספורט",
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 2.2
+  },
+  {
+   "id": "walla_sport",
+   "name": "וואלה ספורט",
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 1.7
+  },
+  {
+   "id": "scores365",
+   "name": "365scores",
+   "ok": true,
+   "count": 3,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "bbc_fb",
+   "name": "BBC Sport",
+   "ok": true,
+   "count": 72,
+   "error": null,
+   "seconds": 0.8
+  },
+  {
+   "id": "guardian_fb",
+   "name": "The Guardian",
+   "ok": true,
+   "count": 60,
+   "error": null,
+   "seconds": 0.5
+  },
+  {
+   "id": "sky_fb",
+   "name": "Sky Sports",
+   "ok": true,
+   "count": 20,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "espn_fb",
+   "name": "ESPN FC",
+   "ok": true,
+   "count": 0,
+   "error": null,
+   "seconds": 0.1
+  },
+  {
+   "id": "fitalia",
+   "name": "Football Italia",
+   "ok": true,
+   "count": 20,
+   "error": null,
+   "seconds": 1.5
+  },
+  {
+   "id": "ynet",
+   "name": "ynet",
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 2.2
+  },
+  {
+   "id": "ynet_flash",
+   "name": "ynet מבזקים",
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 0.7
+  },
+  {
+   "id": "n12",
+   "name": "N12",
+   "ok": true,
+   "count": 20,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "walla",
+   "name": "וואלה",
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "walla_flash",
+   "name": "וואלה מבזקים",
+   "ok": true,
+   "count": 0,
+   "error": null,
+   "seconds": 0.2
+  },
+  {
+   "id": "kan",
+   "name": "כאן 11",
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden",
+   "seconds": 0.1
+  },
+  {
+   "id": "hayom",
+   "name": "ישראל היום",
+   "ok": true,
+   "count": 100,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "bbc",
+   "name": "BBC",
+   "ok": true,
+   "count": 29,
+   "error": null,
+   "seconds": 0.5
+  },
+  {
+   "id": "guardian",
+   "name": "The Guardian",
+   "ok": true,
+   "count": 45,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "dw",
+   "name": "DW",
+   "ok": true,
+   "count": 131,
+   "error": null,
+   "seconds": 3.4
+  },
+  {
+   "id": "france24",
+   "name": "France 24",
+   "ok": true,
+   "count": 24,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "npr",
+   "name": "NPR",
+   "ok": true,
+   "count": 10,
+   "error": null,
+   "seconds": 1.0
+  },
+  {
+   "id": "geektime",
+   "name": "גיקטיים",
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 3.5
+  },
+  {
+   "id": "techcrunch",
+   "name": "TechCrunch",
+   "ok": true,
+   "count": 20,
+   "error": null,
+   "seconds": 1.2
+  },
+  {
+   "id": "verge",
+   "name": "The Verge",
+   "ok": true,
+   "count": 10,
+   "error": null,
+   "seconds": 0.2
+  },
+  {
+   "id": "mittr",
+   "name": "MIT Technology Review",
+   "ok": true,
+   "count": 10,
+   "error": null,
+   "seconds": 2.0
+  },
+  {
+   "id": "wired",
+   "name": "Wired",
+   "ok": true,
+   "count": 10,
+   "error": null,
+   "seconds": 0.3
+  },
+  {
+   "id": "decoder",
+   "name": "The Decoder",
+   "ok": true,
+   "count": 10,
+   "error": null,
+   "seconds": 1.9
+  },
+  {
+   "id": "ars",
+   "name": "Ars Technica",
+   "ok": true,
+   "count": 20,
+   "error": null,
+   "seconds": 1.1
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI",
+   "ok": true,
+   "count": 1318,
+   "error": null,
+   "seconds": 0.5
+  },
+  {
+   "id": "googleai",
+   "name": "Google AI",
+   "ok": true,
+   "count": 20,
+   "error": null,
+   "seconds": 0.8
+  }
+ ],
+ "new": 753,
+ "extracted": 388,
+ "clusters": 20,
+ "extract_failed": 12,
+ "translate": {
+  "requests": 40,
+  "translated": 187,
+  "tokens": 220918,
+  "errors": [
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-latest TimeoutError",
+   "gemini-flash-latest TimeoutError",
+   "gemini-flash-latest TimeoutError",
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest HTTP 503"
+  ],
+  "skipped_no_key": false,
+  "pending_after": 214
+ },
+ "pruned_bodies": 0,
+ "seconds": 1119.6
+}
