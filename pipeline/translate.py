@@ -7,6 +7,8 @@ _BAD = re.compile(r"[\u0600-\u06FF\u0750-\u077F]")  # Arabic letters: the model 
 MODELS = ["gemini-flash-lite-latest", "gemini-flash-latest"]
 BATCH = 5
 PAUSE = 4.5          # seconds between requests: stays under 15 RPM on the free tier
+TIME_BUDGET = int(os.environ.get("TRANSLATE_BUDGET_SECONDS", "480"))  # stop sending new batches after this many seconds
+CALL_TIMEOUT = 75
 MAX_BODY = 6000      # chars of body sent per article
 
 PROMPT = """אתה עורך חדשות ישראלי. לכל פריט במערך קלט תחזיר אובייקט JSON עם השדות:
@@ -29,7 +31,7 @@ def _call(model, key, text):
             "generationConfig": {"responseMimeType": "application/json", "responseSchema": SCHEMA, "temperature": 0.2}}
     req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",
                                  data=json.dumps(body, ensure_ascii=False).encode("utf-8"), headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=120) as r:
+    with urllib.request.urlopen(req, timeout=CALL_TIMEOUT) as r:
         d = json.load(r)
     return json.loads(d["candidates"][0]["content"]["parts"][0]["text"]), d.get("usageMetadata", {})
 
@@ -55,7 +57,9 @@ def translate_batch(items, key, log):
                     time.sleep(20 * (attempt + 1))
                     continue
                 if code >= 500:
-                    time.sleep(5)
+                    time.sleep(3)
+                    if attempt >= 1:
+                        break  # two 5xx in a row: try the other model
                     continue
                 break  # 400/403: try the next model
             except Exception as e:  # noqa
@@ -72,10 +76,12 @@ def translate_pending(articles, bodies, max_requests):
     digests = {}
     if not key:
         return digests, log
+    t0 = time.time()
     pending = [a for a in articles if a["lang"] != "he" and not a.get("he") and a.get("he_tries", 0) < 3]
     pending.sort(key=lambda a: a["published"], reverse=True)
     for i in range(0, len(pending), BATCH):
-        if log["requests"] >= max_requests:
+        if log["requests"] >= max_requests or time.time() - t0 > TIME_BUDGET:
+            log["stopped"] = "cap" if log["requests"] >= max_requests else "time budget"
             break
         chunk = pending[i:i + BATCH]
         items = [{"id": a["id"], "title": a["title"], "summary": a["summary"][:600],
