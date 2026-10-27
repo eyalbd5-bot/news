@@ -1,23 +1,23 @@
 {
- "updated": "2026-10-27T16:17:18Z",
+ "updated": "2026-10-27T20:52:02Z",
  "topics": {
   "football": {
-   "count": 980,
-   "with_body": 947,
-   "translated": 479,
-   "foreign": 487
+   "count": 1035,
+   "with_body": 999,
+   "translated": 513,
+   "foreign": 524
   },
   "news": {
-   "count": 1420,
-   "with_body": 1105,
-   "translated": 560,
-   "foreign": 580
+   "count": 1499,
+   "with_body": 1179,
+   "translated": 597,
+   "foreign": 617
   },
   "ai": {
-   "count": 205,
-   "with_body": 161,
-   "translated": 166,
-   "foreign": 168
+   "count": 213,
+   "with_body": 170,
+   "translated": 176,
+   "foreign": 176
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "id": "ynet_sport",
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.4
   },
   {
    "id": "walla_sport",
@@ -51,15 +51,15 @@
    "ok": true,
    "count": 3,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "bbc_fb",
    "name": "BBC Sport",
    "ok": true,
-   "count": 81,
+   "count": 85,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "id": "guardian_fb",
@@ -75,7 +75,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "espn_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.8
+   "seconds": 1.4
   },
   {
    "id": "ynet",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.4
   },
   {
    "id": "n12",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.5
   },
   {
    "id": "walla",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.9
   },
   {
    "id": "walla_flash",
@@ -131,15 +131,15 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "kan",
    "name": "כאן 11",
    "ok": true,
-   "count": 32,
+   "count": 0,
    "error": null,
-   "seconds": 1.0
+   "seconds": 0.3
   },
   {
    "id": "hayom",
@@ -153,9 +153,9 @@
    "id": "bbc",
    "name": "BBC",
    "ok": true,
-   "count": 24,
+   "count": 28,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "id": "guardian",
@@ -171,7 +171,7 @@
    "ok": true,
    "count": 130,
    "error": null,
-   "seconds": 0.3
+   "seconds": 1.1
   },
   {
    "id": "france24",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "npr",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 4.0
+   "seconds": 2.5
   },
   {
    "id": "techcrunch",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "verge",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "wired",
@@ -235,7 +235,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.4
   },
   {
    "id": "ars",
@@ -249,9 +249,9 @@
    "id": "openai",
    "name": "OpenAI",
    "ok": true,
-   "count": 1326,
+   "count": 1328,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "googleai",
@@ -259,22 +259,22 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.9
   }
  ],
- "new": 192,
- "extracted": 142,
- "clusters": 97,
+ "new": 163,
+ "extracted": 137,
+ "clusters": 102,
  "excluded": 26,
- "extract_failed": 8,
+ "extract_failed": 13,
  "translate": {
-  "requests": 27,
-  "translated": 117,
-  "tokens": 142428,
+  "requests": 24,
+  "translated": 101,
+  "tokens": 123230,
   "errors": [],
   "skipped_no_key": false,
-  "pending_after": 31
+  "pending_after": 32
  },
- "pruned_bodies": 23,
- "seconds": 393.3
+ "pruned_bodies": 20,
+ "seconds": 306.7
 }
