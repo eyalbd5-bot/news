@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-01T17:53:01Z",
+ "updated": "2026-11-01T21:51:49Z",
  "topics": {
   "football": {
-   "count": 1670,
-   "with_body": 1615,
-   "translated": 831,
-   "foreign": 840
+   "count": 1669,
+   "with_body": 1614,
+   "translated": 833,
+   "foreign": 843
   },
   "news": {
    "count": 2340,
-   "with_body": 1776,
-   "translated": 1007,
-   "foreign": 1028
+   "with_body": 1780,
+   "translated": 1017,
+   "foreign": 1037
   },
   "ai": {
-   "count": 259,
-   "with_body": 220,
+   "count": 263,
+   "with_body": 224,
    "translated": 226,
    "foreign": 226
   }
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.9
+   "seconds": 0.6
   },
   {
    "id": "ynet_sport",
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.2
   },
   {
    "id": "walla_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 1.0
+   "seconds": 0.7
   },
   {
    "id": "scores365",
@@ -57,17 +57,17 @@
    "id": "bbc_fb",
    "name": "BBC Sport",
    "ok": true,
-   "count": 74,
+   "count": 78,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "id": "guardian_fb",
    "name": "The Guardian",
    "ok": true,
-   "count": 59,
+   "count": 58,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.2
   },
   {
    "id": "sky_fb",
@@ -75,7 +75,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "espn_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 1.1
+   "seconds": 1.5
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.1
   },
   {
    "id": "ynet_flash",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "n12",
@@ -115,15 +115,15 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "id": "walla",
    "name": "וואלה",
    "ok": true,
-   "count": 30,
+   "count": 0,
    "error": null,
-   "seconds": 1.7
+   "seconds": 1.5
   },
   {
    "id": "walla_flash",
@@ -131,7 +131,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.9
+   "seconds": 1.5
   },
   {
    "id": "kan",
@@ -139,7 +139,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.2
   },
   {
    "id": "hayom",
@@ -153,9 +153,9 @@
    "id": "bbc",
    "name": "BBC",
    "ok": true,
-   "count": 26,
+   "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "guardian",
@@ -171,7 +171,7 @@
    "ok": true,
    "count": 122,
    "error": null,
-   "seconds": 1.1
+   "seconds": 0.5
   },
   {
    "id": "france24",
@@ -187,15 +187,15 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "id": "geektime",
    "name": "גיקטיים",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "seconds": 0.3
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 3.0
   },
   {
    "id": "techcrunch",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "id": "verge",
@@ -211,7 +211,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.1
   },
   {
    "id": "mittr",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.1
   },
   {
    "id": "wired",
@@ -227,7 +227,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "decoder",
@@ -251,7 +251,7 @@
    "ok": true,
    "count": 1341,
    "error": null,
-   "seconds": 0.8
+   "seconds": 1.0
   },
   {
    "id": "googleai",
@@ -259,22 +259,22 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.8
   }
  ],
- "new": 168,
- "extracted": 125,
- "clusters": 176,
+ "new": 137,
+ "extracted": 103,
+ "clusters": 171,
  "excluded": 20,
- "extract_failed": 25,
+ "extract_failed": 27,
  "translate": {
-  "requests": 19,
-  "translated": 83,
-  "tokens": 89862,
+  "requests": 20,
+  "translated": 87,
+  "tokens": 93919,
   "errors": [],
   "skipped_no_key": false,
-  "pending_after": 32
+  "pending_after": 30
  },
- "pruned_bodies": 220,
- "seconds": 260.1
+ "pruned_bodies": 123,
+ "seconds": 306.2
 }
