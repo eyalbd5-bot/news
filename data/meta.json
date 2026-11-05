@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-04T18:30:41Z",
+ "updated": "2026-11-05T00:13:57Z",
  "topics": {
   "football": {
-   "count": 1669,
-   "with_body": 1487,
-   "translated": 795,
-   "foreign": 831
+   "count": 1668,
+   "with_body": 1490,
+   "translated": 819,
+   "foreign": 836
   },
   "news": {
-   "count": 2189,
-   "with_body": 1523,
-   "translated": 896,
-   "foreign": 956
+   "count": 2159,
+   "with_body": 1512,
+   "translated": 918,
+   "foreign": 938
   },
   "ai": {
-   "count": 270,
-   "with_body": 202,
-   "translated": 210,
-   "foreign": 222
+   "count": 278,
+   "with_body": 209,
+   "translated": 228,
+   "foreign": 230
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 1.1
+   "seconds": 0.8
   },
   {
    "id": "ynet_sport",
@@ -57,9 +57,9 @@
    "id": "bbc_fb",
    "name": "BBC Sport",
    "ok": true,
-   "count": 76,
+   "count": 69,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "id": "guardian_fb",
@@ -67,7 +67,7 @@
    "ok": true,
    "count": 59,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "sky_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.9
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "id": "ynet_flash",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "n12",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 1.1
+   "seconds": 0.6
   },
   {
    "id": "walla",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.9
   },
   {
    "id": "walla_flash",
@@ -137,9 +137,9 @@
    "id": "kan",
    "name": "כאן 11",
    "ok": true,
-   "count": 29,
+   "count": 22,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "hayom",
@@ -147,7 +147,7 @@
    "ok": false,
    "count": 0,
    "error": "HTTPError: HTTP Error 403: Forbidden",
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "bbc",
@@ -169,9 +169,9 @@
    "id": "dw",
    "name": "DW",
    "ok": true,
-   "count": 125,
+   "count": 122,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.7
   },
   {
    "id": "france24",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 11.8
+   "seconds": 3.3
   },
   {
    "id": "techcrunch",
@@ -211,7 +211,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "mittr",
@@ -235,7 +235,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.5
+   "seconds": 1.7
   },
   {
    "id": "ars",
@@ -249,9 +249,9 @@
    "id": "openai",
    "name": "OpenAI",
    "ok": true,
-   "count": 1356,
+   "count": 1359,
    "error": null,
-   "seconds": 0.5
+   "seconds": 1.1
   },
   {
    "id": "googleai",
@@ -262,28 +262,22 @@
    "seconds": 0.5
   }
  ],
- "new": 318,
- "extracted": 140,
- "clusters": 171,
- "excluded": 25,
- "extract_failed": 10,
+ "new": 175,
+ "extracted": 147,
+ "clusters": 164,
+ "excluded": 20,
+ "extract_failed": 3,
  "translate": {
-  "requests": 15,
-  "translated": 60,
-  "tokens": 86771,
+  "requests": 43,
+  "translated": 188,
+  "tokens": 194086,
   "errors": [
    "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-latest TimeoutError",
-   "gemini-flash-latest HTTP 503"
+   "gemini-flash-lite-latest HTTP 503"
   ],
   "skipped_no_key": false,
-  "stopped": "time budget",
-  "pending_after": 129
+  "pending_after": 41
  },
- "pruned_bodies": 314,
- "seconds": 563.7
+ "pruned_bodies": 187,
+ "seconds": 589.3
 }
