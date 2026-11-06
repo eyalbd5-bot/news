@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-06T02:06:08Z",
+ "updated": "2026-11-06T14:35:24Z",
  "topics": {
   "football": {
-   "count": 1645,
-   "with_body": 1460,
-   "translated": 782,
-   "foreign": 855
+   "count": 1642,
+   "with_body": 1416,
+   "translated": 793,
+   "foreign": 865
   },
   "news": {
-   "count": 2129,
-   "with_body": 1496,
-   "translated": 853,
-   "foreign": 926
+   "count": 2085,
+   "with_body": 1419,
+   "translated": 848,
+   "foreign": 919
   },
   "ai": {
-   "count": 292,
-   "with_body": 221,
+   "count": 290,
+   "with_body": 217,
    "translated": 227,
-   "foreign": 245
+   "foreign": 243
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "ynet_sport",
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "walla_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.9
   },
   {
    "id": "scores365",
@@ -51,7 +51,7 @@
    "ok": true,
    "count": 3,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "bbc_fb",
@@ -67,7 +67,7 @@
    "ok": true,
    "count": 58,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "sky_fb",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 1.4
+   "seconds": 0.9
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "ynet_flash",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "n12",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "id": "walla",
@@ -123,21 +123,21 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.0
   },
   {
    "id": "walla_flash",
    "name": "וואלה מבזקים",
    "ok": true,
-   "count": 30,
+   "count": 0,
    "error": null,
-   "seconds": 0.9
+   "seconds": 1.0
   },
   {
    "id": "kan",
    "name": "כאן 11",
    "ok": true,
-   "count": 33,
+   "count": 27,
    "error": null,
    "seconds": 0.3
   },
@@ -153,7 +153,7 @@
    "id": "bbc",
    "name": "BBC",
    "ok": true,
-   "count": 22,
+   "count": 27,
    "error": null,
    "seconds": 0.2
   },
@@ -163,7 +163,7 @@
    "ok": true,
    "count": 45,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.1
   },
   {
    "id": "dw",
@@ -171,7 +171,7 @@
    "ok": true,
    "count": 120,
    "error": null,
-   "seconds": 1.0
+   "seconds": 0.4
   },
   {
    "id": "france24",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "npr",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "geektime",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 2.8
+   "seconds": 2.2
   },
   {
    "id": "techcrunch",
@@ -235,7 +235,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.8
+   "seconds": 1.6
   },
   {
    "id": "ars",
@@ -243,15 +243,15 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "id": "openai",
    "name": "OpenAI",
    "ok": true,
-   "count": 1365,
+   "count": 1366,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "id": "googleai",
@@ -259,21 +259,23 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.5
   }
  ],
- "new": 128,
- "extracted": 147,
- "clusters": 158,
- "excluded": 25,
- "extract_failed": 3,
+ "new": 301,
+ "extracted": 149,
+ "clusters": 160,
+ "excluded": 22,
+ "extract_failed": 1,
  "translate": {
-  "requests": 40,
-  "translated": 173,
-  "tokens": 251133,
+  "requests": 39,
+  "translated": 157,
+  "tokens": 203958,
   "errors": [
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-latest TimeoutError",
+   "gemini-flash-latest HTTP 503",
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-lite-latest HTTP 503",
@@ -282,8 +284,8 @@
   ],
   "skipped_no_key": false,
   "stopped": "time budget",
-  "pending_after": 185
+  "pending_after": 182
  },
- "pruned_bodies": 67,
- "seconds": 542.9
+ "pruned_bodies": 307,
+ "seconds": 638.9
 }
