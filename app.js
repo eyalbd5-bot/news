@@ -85,6 +85,8 @@ const topicCfg = () => state.cfg.topics.find(t => t.id === state.topic);
 const title = a => a.he?.title || a.title;
 const summary = a => a.he?.summary || a.summary || "";
 const isPrimary = a => !a.cluster || a.cluster === a.id;
+const isIsraeli = a => a.lang === "he";
+const ready = a => isIsraeli(a) || !!a.he;   // a foreign item is shown only once it has a Hebrew title
 function matches(a, q) {
   q = q.trim().toLowerCase(); if (!q) return true;
   return [a.title, a.summary, a.he?.title, a.he?.summary, a.source_name].some(s => (s || "").toLowerCase().includes(q));
@@ -96,7 +98,7 @@ function setAccent(color) { document.documentElement.style.setProperty("--accent
 function renderTabs() {
   const nav = $("#tabs"); nav.innerHTML = "";
   for (const t of state.cfg.topics) {
-    const n = (state.data[t.id] || []).filter(a => isPrimary(a) && !a.ticker && Date.now() - Date.parse(a.published) < D).length;
+    const n = (state.data[t.id] || []).filter(a => isPrimary(a) && !a.ticker && ready(a) && Date.now() - Date.parse(a.published) < D).length;
     const b = el("button", "tab" + (t.id === state.topic && state.view === "feed" ? " active" : ""),
       `<span class="ic">${t.icon}</span><span>${esc(t.name)}</span><span class="cnt" title="ידיעות ב-24 שעות">${n}</span>`);
     b.style.setProperty("--tab-color", t.color);
@@ -117,7 +119,8 @@ function renderSubbar() {
   const t = topicCfg();
   const row1 = el("div", "chips");
   row1.append(chip("הכל", state.section === "all", () => { state.section = "all"; render(); }));
-  for (const s of t.sections) row1.append(chip(s.name, state.section === s.id, () => { state.section = s.id; render(); }));
+  row1.append(chip("🇮🇱 תקשורת ישראלית", state.section === "il", () => { state.section = "il"; render(); }));
+  row1.append(chip("🌍 תקשורת בינלאומית", state.section === "world", () => { state.section = "world"; render(); }));
   bar.append(row1);
   if (t.teams?.length) {
     const row2 = el("div", "chips");
@@ -154,8 +157,9 @@ function visibleArticles() {
   if (state.view === "saved") arts = Object.values(state.saved).sort((a, b) => (b.saved_at || "").localeCompare(a.saved_at || ""));
   else if (state.q.trim()) arts = state.cfg.topics.flatMap(t => state.data[t.id] || []).filter(a => isPrimary(a) && matches(a, state.q)).sort((a, b) => b.published.localeCompare(a.published));
   else {
-    arts = (state.data[state.topic] || []).filter(a => isPrimary(a) && !a.ticker);
-    if (state.section !== "all") arts = arts.filter(a => a.section === state.section);
+    arts = (state.data[state.topic] || []).filter(a => isPrimary(a) && !a.ticker && ready(a));
+    if (state.section === "il") arts = arts.filter(isIsraeli);
+    if (state.section === "world") arts = arts.filter(a => !isIsraeli(a));
     if (state.team) arts = arts.filter(a => a.tags?.teams?.includes(state.team));
     if (state.league) arts = arts.filter(a => a.tags?.leagues?.includes(state.league));
   }
@@ -178,17 +182,36 @@ function render() {
     const spot = arts.filter(a => a.tags?.teams?.length).slice(0, 10);
     if (spot.length) feed.append(renderSpotlight(spot));
   }
-  const heroIdx = arts.findIndex(a => a.image);
-  if (heroIdx >= 0 && state.view === "feed" && !state.q) { const a = arts.splice(heroIdx, 1)[0]; feed.append(card(a, i++, true)); }
-  let lastDay = null;
-  for (const a of arts) {
-    if (state.view === "feed" && !state.q) {
-      const day = dayLabel(a.published);
-      if (day !== lastDay && lastDay !== null) feed.append(el("div", "section-title", esc(day)));
-      lastDay = day;
-    }
-    feed.append(card(a, i++));
+  const twoBlocks = state.view === "feed" && !state.q && state.section === "all";
+  if (twoBlocks) {
+    const il = arts.filter(isIsraeli), world = arts.filter(a => !isIsraeli(a));
+    if (il.length) { feed.append(blockHead("🇮🇱", "תקשורת ישראלית", `${il.length} ידיעות`)); i = renderList(feed, il, i, true); }
+    if (world.length) { feed.append(blockHead("🌍", "תקשורת בינלאומית", `${world.length} ידיעות, מתורגמות לעברית`)); i = renderList(feed, world, i, true); }
+    return;
   }
+  renderList(feed, arts, i, state.view === "feed" && !state.q);
+}
+function blockHead(icon, title, sub) {
+  return el("div", "block-head", `<span class="bh-ic">${icon}</span><h2>${esc(title)}</h2><span class="bh-sub">${esc(sub)}</span>`);
+}
+const PAGE = 24;
+function renderList(feed, arts, i, withHero) {
+  arts = arts.slice();
+  const heroIdx = withHero ? arts.findIndex(a => a.image) : -1;
+  if (heroIdx >= 0) { const a = arts.splice(heroIdx, 1)[0]; feed.append(card(a, i++, true)); }
+  let pos = 0;
+  const more = el("button", "more-btn");
+  const paint = () => {
+    const slice = arts.slice(pos, pos + PAGE);
+    for (const a of slice) more.before(card(a, i++));
+    pos += slice.length;
+    const left = arts.length - pos;
+    if (left > 0) more.textContent = `הצג עוד ${Math.min(PAGE, left)} ידיעות (נותרו ${left})`; else more.remove();
+  };
+  more.onclick = paint;
+  feed.append(more);
+  paint();
+  return i;
 }
 function dayLabel(iso) {
   const d = new Date(iso), now = new Date();
@@ -226,10 +249,11 @@ function card(a, i, hero = false) {
   media.append(el("span", "src-chip", esc(a.source_name)));
   const others = (a.cluster_sources || []).filter(s => s !== a.source_name);
   const extraSrc = others.length ? `<span class="more" title="${esc(others.join(", "))}">+${others.length} מקורות</span>` : "";
-  const pend = a.lang !== "he" && !a.he ? `<span class="pending">ממתין לתרגום</span>` : "";
+  const pend = a.lang !== "he" && !a.he ? `<span class="pending">טרם תורגם</span>` : "";
+  const origin = `<span class="origin">${a.lang === "he" ? "🇮🇱" : "🌍"}</span>`;
   const topicPill = (state.q || state.view === "saved") ? `<span class="topic-pill" style="--tc:${t.color}">${t.icon} ${esc(t.name)}</span>` : "";
   const body = el("div", "card-body",
-    `<div class="meta">${topicPill}<span>${ago(a.published)}</span>${extraSrc}${pend}</div>
+    `<div class="meta">${topicPill}${origin}<span>${ago(a.published)}</span>${extraSrc}${pend}</div>
      <h3>${esc(title(a))}</h3><p>${esc(summary(a))}</p>`);
   const foot = el("div", "card-foot");
   const tm = teamOf(a); if (tm) { const tg = el("span", "tag team", esc(tm.name)); tg.style.setProperty("--c", tm.color); foot.append(tg); }
