@@ -32,6 +32,13 @@ def main():
             bodies[aid] = load_json(BODY_DIR / f"{aid}.json", None)
         return bodies[aid]
 
+    # 1a. a source removed from the config takes its stored articles with it
+    known = {s["id"] for t in cfg["topics"] for s in t["sources"]}
+    gone = [aid for aid, a in index.items() if a["source"] not in known]
+    for aid in gone:
+        del index[aid]
+    report["removed_source_articles"] = len(gone)
+
     # 1b. exclusions (apply to what is already stored too, so a new rule cleans history)
     excluders = {t["id"]: build_excluder(t) for t in cfg["topics"]}
     dropped = [aid for aid, a in index.items() if excluders[a["topic"]](a)]

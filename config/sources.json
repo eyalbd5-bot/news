@@ -364,12 +364,22 @@
           "url": "https://www.kan.org.il/api/newsflash/v2/Newsflash"
         },
         {
-          "id": "hayom",
-          "name": "ישראל היום",
+          "id": "maariv",
+          "name": "מעריב",
           "section": "il",
           "lang": "he",
           "type": "rss",
-          "url": "https://www.israelhayom.co.il/rss"
+          "url": "https://www.maariv.co.il/Rss/RssFeedsChadashot"
+        },
+        {
+          "id": "maariv_flash",
+          "name": "מעריב מבזקים",
+          "section": "il",
+          "lang": "he",
+          "type": "rss",
+          "ticker": true,
+          "no_body": true,
+          "url": "https://www.maariv.co.il/Rss/RssFeedsMivzakiChadashot"
         },
         {
           "id": "bbc",
