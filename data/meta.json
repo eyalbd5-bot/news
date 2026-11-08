@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-08T20:36:15Z",
+ "updated": "2026-11-08T21:06:17Z",
  "topics": {
   "football": {
-   "count": 1675,
-   "with_body": 1633,
+   "count": 1678,
+   "with_body": 1636,
    "translated": 868,
    "foreign": 886
   },
   "news": {
-   "count": 2403,
+   "count": 2405,
    "with_body": 1824,
-   "translated": 931,
-   "foreign": 945
+   "translated": 930,
+   "foreign": 944
   },
   "ai": {
-   "count": 289,
-   "with_body": 247,
+   "count": 290,
+   "with_body": 248,
    "translated": 242,
    "foreign": 244
   }
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.5
   },
   {
    "id": "ynet_sport",
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "walla_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "scores365",
@@ -59,7 +59,7 @@
    "ok": true,
    "count": 66,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.4
   },
   {
    "id": "guardian_fb",
@@ -75,7 +75,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "espn_fb",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.3
   },
   {
    "id": "ynet",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.1
   },
   {
    "id": "n12",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "id": "walla",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.5
+   "seconds": 1.0
   },
   {
    "id": "walla_flash",
@@ -131,7 +131,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.9
   },
   {
    "id": "kan",
@@ -139,7 +139,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "maariv",
@@ -147,7 +147,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.7
   },
   {
    "id": "maariv_flash",
@@ -155,7 +155,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.9
+   "seconds": 0.3
   },
   {
    "id": "bbc",
@@ -163,7 +163,7 @@
    "ok": true,
    "count": 27,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "guardian",
@@ -171,7 +171,7 @@
    "ok": true,
    "count": 45,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.7
   },
   {
    "id": "dw",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "npr",
@@ -195,15 +195,15 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "geektime",
    "name": "גיקטיים",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "seconds": 0.1
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 2.3
   },
   {
    "id": "techcrunch",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.1
   },
   {
    "id": "mittr",
@@ -251,7 +251,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.3
   },
   {
    "id": "openai",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1368,
    "error": null,
-   "seconds": 1.1
+   "seconds": 0.9
   },
   {
    "id": "googleai",
@@ -267,23 +267,23 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.6
   }
  ],
- "new": 25,
- "extracted": 4,
- "clusters": 164,
+ "new": 38,
+ "extracted": 14,
+ "clusters": 166,
  "removed_source_articles": 0,
  "excluded": 20,
- "extract_failed": 21,
+ "extract_failed": 22,
  "translate": {
   "requests": 6,
-  "translated": 27,
-  "tokens": 13444,
+  "translated": 25,
+  "tokens": 14603,
   "errors": [],
   "skipped_no_key": false,
-  "pending_after": 34
+  "pending_after": 36
  },
- "pruned_bodies": 25,
- "seconds": 68.7
+ "pruned_bodies": 30,
+ "seconds": 71.3
 }
