@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-10T06:44:13Z",
+ "updated": "2026-11-10T07:14:18Z",
  "topics": {
   "football": {
-   "count": 1735,
-   "with_body": 1691,
-   "translated": 900,
-   "foreign": 919
+   "count": 1743,
+   "with_body": 1699,
+   "translated": 902,
+   "foreign": 921
   },
   "news": {
-   "count": 2774,
-   "with_body": 2011,
-   "translated": 1004,
-   "foreign": 1022
+   "count": 2777,
+   "with_body": 2013,
+   "translated": 1005,
+   "foreign": 1023
   },
   "ai": {
-   "count": 297,
-   "with_body": 259,
-   "translated": 251,
-   "foreign": 252
+   "count": 298,
+   "with_body": 260,
+   "translated": 252,
+   "foreign": 253
   }
  },
  "sources": [
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "walla_sport",
@@ -57,7 +57,7 @@
    "id": "bbc_fb",
    "name": "BBC Sport",
    "ok": true,
-   "count": 78,
+   "count": 80,
    "error": null,
    "seconds": 0.6
   },
@@ -65,9 +65,9 @@
    "id": "guardian_fb",
    "name": "The Guardian",
    "ok": true,
-   "count": 57,
+   "count": 56,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "sky_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.8
+   "seconds": 1.0
   },
   {
    "id": "ynet",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "n12",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.7
   },
   {
    "id": "walla_flash",
@@ -137,9 +137,9 @@
    "id": "kan",
    "name": "כאן 11",
    "ok": true,
-   "count": 28,
+   "count": 0,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "id": "maariv",
@@ -147,7 +147,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "id": "maariv_flash",
@@ -155,7 +155,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.3
   },
   {
    "id": "bbc",
@@ -163,7 +163,7 @@
    "ok": true,
    "count": 33,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "guardian",
@@ -171,13 +171,13 @@
    "ok": true,
    "count": 45,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "dw",
    "name": "DW",
    "ok": true,
-   "count": 120,
+   "count": 121,
    "error": null,
    "seconds": 0.4
   },
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "npr",
@@ -200,10 +200,10 @@
   {
    "id": "geektime",
    "name": "גיקטיים",
-   "ok": true,
-   "count": 30,
-   "error": null,
-   "seconds": 2.1
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden",
+   "seconds": 0.1
   },
   {
    "id": "techcrunch",
@@ -211,7 +211,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "verge",
@@ -243,7 +243,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.3
+   "seconds": 1.4
   },
   {
    "id": "ars",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1372,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "id": "googleai",
@@ -270,20 +270,23 @@
    "seconds": 0.5
   }
  ],
- "new": 40,
- "extracted": 15,
+ "new": 43,
+ "extracted": 20,
  "clusters": 183,
  "removed_source_articles": 0,
  "excluded": 24,
- "extract_failed": 21,
+ "extract_failed": 20,
  "translate": {
-  "requests": 8,
-  "translated": 36,
-  "tokens": 31163,
-  "errors": [],
+  "requests": 7,
+  "translated": 29,
+  "tokens": 24737,
+  "errors": [
+   "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest HTTP 503"
+  ],
   "skipped_no_key": false,
   "pending_after": 39
  },
- "pruned_bodies": 27,
- "seconds": 104.3
+ "pruned_bodies": 29,
+ "seconds": 143.6
 }
