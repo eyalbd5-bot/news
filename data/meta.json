@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-12T07:47:53Z",
+ "updated": "2026-11-12T08:17:56Z",
  "topics": {
   "football": {
-   "count": 1766,
-   "with_body": 1716,
-   "translated": 900,
-   "foreign": 930
+   "count": 1773,
+   "with_body": 1721,
+   "translated": 902,
+   "foreign": 933
   },
   "news": {
-   "count": 3359,
-   "with_body": 2303,
-   "translated": 1095,
-   "foreign": 1144
+   "count": 3370,
+   "with_body": 2311,
+   "translated": 1097,
+   "foreign": 1146
   },
   "ai": {
    "count": 304,
-   "with_body": 268,
-   "translated": 255,
-   "foreign": 261
+   "with_body": 269,
+   "translated": 254,
+   "foreign": 260
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "id": "ynet_sport",
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "walla_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "scores365",
@@ -59,13 +59,13 @@
    "ok": true,
    "count": 86,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.9
   },
   {
    "id": "guardian_fb",
    "name": "The Guardian",
    "ok": true,
-   "count": 56,
+   "count": 57,
    "error": null,
    "seconds": 0.2
   },
@@ -75,7 +75,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "espn_fb",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "ynet_flash",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "n12",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.8
   },
   {
    "id": "walla",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.7
   },
   {
    "id": "walla_flash",
@@ -139,7 +139,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "maariv",
@@ -155,13 +155,13 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.6
   },
   {
    "id": "bbc",
    "name": "BBC",
    "ok": true,
-   "count": 31,
+   "count": 32,
    "error": null,
    "seconds": 0.1
   },
@@ -177,9 +177,9 @@
    "id": "dw",
    "name": "DW",
    "ok": true,
-   "count": 125,
+   "count": 124,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.8
   },
   {
    "id": "france24",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "npr",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "geektime",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 2.3
+   "seconds": 3.6
   },
   {
    "id": "techcrunch",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "mittr",
@@ -227,7 +227,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "wired",
@@ -243,7 +243,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.3
+   "seconds": 1.4
   },
   {
    "id": "ars",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1381,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.5
   },
   {
    "id": "googleai",
@@ -267,29 +267,30 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.5
   }
  ],
- "new": 49,
- "extracted": 18,
+ "new": 52,
+ "extracted": 23,
  "clusters": 222,
  "removed_source_articles": 0,
  "excluded": 24,
- "extract_failed": 25,
+ "extract_failed": 27,
  "translate": {
-  "requests": 7,
-  "translated": 25,
-  "tokens": 14145,
+  "requests": 8,
+  "translated": 32,
+  "tokens": 20430,
   "errors": [
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-latest TimeoutError",
+   "gemini-flash-latest TimeoutError",
    "gemini-flash-latest HTTP 503",
-   "gemini-flash-latest HTTP 429",
-   "gemini-flash-latest HTTP 503"
+   "gemini-flash-lite-latest HTTP 503"
   ],
   "skipped_no_key": false,
-  "pending_after": 87
+  "pending_after": 86
  },
- "pruned_bodies": 29,
- "seconds": 165.2
+ "pruned_bodies": 34,
+ "seconds": 288.6
 }
