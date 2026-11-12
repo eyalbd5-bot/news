@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-12T22:36:18Z",
+ "updated": "2026-11-12T23:06:22Z",
  "topics": {
   "football": {
-   "count": 1766,
-   "with_body": 1714,
-   "translated": 877,
-   "foreign": 912
+   "count": 1768,
+   "with_body": 1716,
+   "translated": 880,
+   "foreign": 915
   },
   "news": {
-   "count": 3578,
-   "with_body": 2436,
-   "translated": 1129,
-   "foreign": 1201
+   "count": 3583,
+   "with_body": 2434,
+   "translated": 1136,
+   "foreign": 1207
   },
   "ai": {
    "count": 316,
    "with_body": 280,
-   "translated": 250,
+   "translated": 251,
    "foreign": 271
   }
  },
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "walla_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "scores365",
@@ -51,7 +51,7 @@
    "ok": true,
    "count": 3,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "bbc_fb",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "ynet_flash",
@@ -107,7 +107,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "n12",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "walla",
@@ -129,15 +129,15 @@
    "id": "walla_flash",
    "name": "וואלה מבזקים",
    "ok": true,
-   "count": 30,
+   "count": 0,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "id": "kan",
    "name": "כאן 11",
    "ok": true,
-   "count": 31,
+   "count": 0,
    "error": null,
    "seconds": 0.1
   },
@@ -155,7 +155,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "id": "bbc",
@@ -163,7 +163,7 @@
    "ok": true,
    "count": 29,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "guardian",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 127,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "id": "france24",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.2
+   "seconds": 1.4
   },
   {
    "id": "geektime",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 1.9
+   "seconds": 2.2
   },
   {
    "id": "techcrunch",
@@ -211,7 +211,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "verge",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "id": "mittr",
@@ -227,7 +227,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.4
   },
   {
    "id": "wired",
@@ -235,7 +235,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "decoder",
@@ -243,7 +243,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.3
   },
   {
    "id": "ars",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1384,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.8
   },
   {
    "id": "googleai",
@@ -270,26 +270,22 @@
    "seconds": 0.5
   }
  ],
- "new": 49,
- "extracted": 21,
- "clusters": 240,
+ "new": 45,
+ "extracted": 12,
+ "clusters": 242,
  "removed_source_articles": 0,
  "excluded": 21,
  "extract_failed": 27,
  "translate": {
-  "requests": 11,
-  "translated": 47,
-  "tokens": 40424,
+  "requests": 10,
+  "translated": 44,
+  "tokens": 29082,
   "errors": [
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-latest HTTP 503",
-   "gemini-flash-latest TimeoutError",
-   "gemini-flash-latest TimeoutError"
+   "gemini-flash-lite-latest HTTP 503"
   ],
   "skipped_no_key": false,
-  "pending_after": 131
+  "pending_after": 127
  },
- "pruned_bodies": 34,
- "seconds": 301.2
+ "pruned_bodies": 37,
+ "seconds": 128.8
 }
