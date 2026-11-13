@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T12:27:30Z",
+ "updated": "2026-11-13T12:59:32Z",
  "topics": {
   "football": {
    "count": 1800,
@@ -8,16 +8,16 @@
    "foreign": 923
   },
   "news": {
-   "count": 3674,
-   "with_body": 2484,
-   "translated": 1161,
-   "foreign": 1235
+   "count": 3682,
+   "with_body": 2487,
+   "translated": 1160,
+   "foreign": 1236
   },
   "ai": {
-   "count": 313,
-   "with_body": 278,
-   "translated": 247,
-   "foreign": 268
+   "count": 315,
+   "with_body": 280,
+   "translated": 250,
+   "foreign": 270
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.6
+   "seconds": 1.0
   },
   {
    "id": "ynet_sport",
@@ -35,7 +35,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.4
   },
   {
    "id": "walla_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "scores365",
@@ -51,7 +51,7 @@
    "ok": true,
    "count": 3,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "bbc_fb",
@@ -59,7 +59,7 @@
    "ok": true,
    "count": 80,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.5
   },
   {
    "id": "guardian_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.9
+   "seconds": 1.2
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "ynet_flash",
@@ -115,29 +115,29 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.7
   },
   {
    "id": "walla",
    "name": "וואלה",
    "ok": true,
-   "count": 0,
+   "count": 30,
    "error": null,
-   "seconds": 0.9
+   "seconds": 1.7
   },
   {
    "id": "walla_flash",
    "name": "וואלה מבזקים",
    "ok": true,
-   "count": 0,
+   "count": 30,
    "error": null,
-   "seconds": 0.8
+   "seconds": 1.5
   },
   {
    "id": "kan",
    "name": "כאן 11",
    "ok": true,
-   "count": 25,
+   "count": 0,
    "error": null,
    "seconds": 0.3
   },
@@ -147,7 +147,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.7
+   "seconds": 1.0
   },
   {
    "id": "maariv_flash",
@@ -155,15 +155,15 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.9
   },
   {
    "id": "bbc",
    "name": "BBC",
    "ok": true,
-   "count": 20,
+   "count": 22,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.4
   },
   {
    "id": "guardian",
@@ -171,7 +171,7 @@
    "ok": true,
    "count": 45,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "dw",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 127,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.7
   },
   {
    "id": "france24",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "npr",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 1.8
+   "seconds": 3.1
   },
   {
    "id": "techcrunch",
@@ -211,7 +211,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "verge",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "mittr",
@@ -243,7 +243,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.4
+   "seconds": 1.6
   },
   {
    "id": "ars",
@@ -251,7 +251,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.5
   },
   {
    "id": "openai",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1385,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.9
   },
   {
    "id": "googleai",
@@ -267,32 +267,32 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.6
   }
  ],
- "new": 41,
- "extracted": 10,
- "clusters": 253,
+ "new": 56,
+ "extracted": 23,
+ "clusters": 256,
  "removed_source_articles": 0,
  "excluded": 22,
- "extract_failed": 28,
+ "extract_failed": 27,
  "translate": {
-  "requests": 9,
-  "translated": 39,
-  "tokens": 25266,
+  "requests": 10,
+  "translated": 43,
+  "tokens": 31655,
   "errors": [
    "gemini-flash-lite-latest HTTP 503",
+   "gemini-flash-lite-latest TimeoutError",
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-latest HTTP 503",
    "gemini-flash-latest TimeoutError",
-   "gemini-flash-latest HTTP 503",
+   "gemini-flash-latest HTTP 429",
    "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503",
-   "gemini-flash-lite-latest HTTP 503"
+   "gemini-flash-lite-latest TimeoutError"
   ],
   "skipped_no_key": false,
-  "pending_after": 132
+  "pending_after": 133
  },
- "pruned_bodies": 42,
- "seconds": 235.7
+ "pruned_bodies": 45,
+ "seconds": 524.7
 }
