@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-16T15:58:06Z",
+ "updated": "2026-11-16T16:29:43Z",
  "topics": {
   "football": {
-   "count": 1714,
-   "with_body": 1635,
-   "translated": 753,
-   "foreign": 835
+   "count": 1710,
+   "with_body": 1632,
+   "translated": 745,
+   "foreign": 830
   },
   "news": {
-   "count": 3902,
-   "with_body": 2547,
-   "translated": 1143,
-   "foreign": 1293
+   "count": 3924,
+   "with_body": 2568,
+   "translated": 1135,
+   "foreign": 1290
   },
   "ai": {
-   "count": 316,
-   "with_body": 275,
-   "translated": 236,
-   "foreign": 270
+   "count": 319,
+   "with_body": 278,
+   "translated": 235,
+   "foreign": 272
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.8
+   "seconds": 1.3
   },
   {
    "id": "ynet_sport",
@@ -51,23 +51,23 @@
    "ok": true,
    "count": 3,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "bbc_fb",
    "name": "BBC Sport",
    "ok": true,
-   "count": 78,
+   "count": 79,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.5
   },
   {
    "id": "guardian_fb",
    "name": "The Guardian",
    "ok": true,
-   "count": 57,
+   "count": 58,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.5
   },
   {
    "id": "sky_fb",
@@ -75,7 +75,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "espn_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.0
+   "seconds": 0.1
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.0
   },
   {
    "id": "ynet",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.3
   },
   {
    "id": "walla",
@@ -123,23 +123,23 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.9
+   "seconds": 0.8
   },
   {
    "id": "walla_flash",
    "name": "וואלה מבזקים",
    "ok": true,
-   "count": 0,
+   "count": 30,
    "error": null,
-   "seconds": 0.9
+   "seconds": 0.7
   },
   {
    "id": "kan",
    "name": "כאן 11",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "seconds": 0.1
+   "ok": true,
+   "count": 34,
+   "error": null,
+   "seconds": 0.3
   },
   {
    "id": "maariv",
@@ -147,7 +147,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "maariv_flash",
@@ -155,7 +155,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "bbc",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 130,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "id": "france24",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "npr",
@@ -200,10 +200,10 @@
   {
    "id": "geektime",
    "name": "גיקטיים",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden",
-   "seconds": 0.1
+   "ok": true,
+   "count": 30,
+   "error": null,
+   "seconds": 2.8
   },
   {
    "id": "techcrunch",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1393,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "id": "googleai",
@@ -270,12 +270,12 @@
    "seconds": 0.5
   }
  ],
- "new": 76,
- "extracted": 39,
- "clusters": 267,
+ "new": 81,
+ "extracted": 51,
+ "clusters": 269,
  "removed_source_articles": 0,
  "excluded": 29,
- "extract_failed": 25,
+ "extract_failed": 29,
  "translate": {
   "requests": 5,
   "translated": 0,
@@ -285,7 +285,7 @@
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-latest HTTP 429",
    "gemini-flash-latest HTTP 429",
-   "gemini-flash-latest HTTP 503",
+   "gemini-flash-latest HTTP 429",
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-lite-latest HTTP 503",
    "gemini-flash-latest HTTP 429",
@@ -309,8 +309,8 @@
   ],
   "skipped_no_key": false,
   "stopped": "time budget",
-  "pending_after": 291
+  "pending_after": 302
  },
- "pruned_bodies": 34,
- "seconds": 645.5
+ "pruned_bodies": 32,
+ "seconds": 705.9
 }
