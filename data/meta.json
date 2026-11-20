@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-20T08:12:30Z",
+ "updated": "2026-11-20T08:42:33Z",
  "topics": {
   "football": {
-   "count": 1705,
-   "with_body": 1627,
-   "translated": 739,
-   "foreign": 805
+   "count": 1707,
+   "with_body": 1628,
+   "translated": 741,
+   "foreign": 806
   },
   "news": {
-   "count": 3803,
-   "with_body": 2545,
+   "count": 3808,
+   "with_body": 2549,
    "translated": 1154,
-   "foreign": 1272
+   "foreign": 1275
   },
   "ai": {
-   "count": 318,
+   "count": 319,
    "with_body": 273,
-   "translated": 242,
-   "foreign": 274
+   "translated": 243,
+   "foreign": 275
   }
  },
  "sources": [
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.9
   },
   {
    "id": "ynet_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.8
+   "seconds": 1.2
   },
   {
    "id": "scores365",
@@ -59,7 +59,7 @@
    "ok": true,
    "count": 83,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "id": "guardian_fb",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.7
+   "seconds": 1.1
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "ynet_flash",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   {
    "id": "walla",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.7
+   "seconds": 1.4
   },
   {
    "id": "walla_flash",
@@ -131,7 +131,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.6
+   "seconds": 1.3
   },
   {
    "id": "kan",
@@ -139,7 +139,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "maariv",
@@ -147,7 +147,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "id": "maariv_flash",
@@ -155,7 +155,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.7
   },
   {
    "id": "bbc",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 134,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.4
   },
   {
    "id": "france24",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "geektime",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 2.7
+   "seconds": 3.3
   },
   {
    "id": "techcrunch",
@@ -211,7 +211,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "verge",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "id": "mittr",
@@ -227,7 +227,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.6
   },
   {
    "id": "wired",
@@ -243,7 +243,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 2.7
+   "seconds": 1.7
   },
   {
    "id": "ars",
@@ -251,7 +251,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.6
   },
   {
    "id": "openai",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1418,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "id": "googleai",
@@ -270,22 +270,20 @@
    "seconds": 0.5
   }
  ],
- "new": 46,
- "extracted": 23,
+ "new": 50,
+ "extracted": 25,
  "clusters": 257,
  "removed_source_articles": 0,
  "excluded": 22,
- "extract_failed": 19,
+ "extract_failed": 23,
  "translate": {
-  "requests": 8,
-  "translated": 33,
-  "tokens": 29458,
-  "errors": [
-   "gemini-flash-lite-latest HTTP 503"
-  ],
+  "requests": 9,
+  "translated": 35,
+  "tokens": 31089,
+  "errors": [],
   "skipped_no_key": false,
-  "pending_after": 217
+  "pending_after": 221
  },
- "pruned_bodies": 52,
- "seconds": 108.6
+ "pruned_bodies": 38,
+ "seconds": 111.7
 }
