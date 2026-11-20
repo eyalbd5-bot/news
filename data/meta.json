@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T01:13:45Z",
+ "updated": "2026-11-20T01:31:42Z",
  "topics": {
   "football": {
    "count": 1717,
@@ -8,10 +8,10 @@
    "foreign": 806
   },
   "news": {
-   "count": 3800,
+   "count": 3801,
    "with_body": 2544,
    "translated": 1164,
-   "foreign": 1282
+   "foreign": 1283
   },
   "ai": {
    "count": 320,
@@ -27,7 +27,7 @@
    "ok": true,
    "count": 53,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.6
   },
   {
    "id": "ynet_sport",
@@ -43,7 +43,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "scores365",
@@ -51,7 +51,7 @@
    "ok": true,
    "count": 3,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "bbc_fb",
@@ -59,7 +59,7 @@
    "ok": true,
    "count": 83,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.9
   },
   {
    "id": "guardian_fb",
@@ -75,7 +75,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.7
   },
   {
    "id": "espn_fb",
@@ -83,7 +83,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   {
    "id": "fitalia",
@@ -91,7 +91,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "id": "ynet",
@@ -99,7 +99,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   {
    "id": "ynet_flash",
@@ -115,7 +115,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.8
   },
   {
    "id": "walla",
@@ -123,7 +123,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "id": "walla_flash",
@@ -131,7 +131,7 @@
    "ok": true,
    "count": 0,
    "error": null,
-   "seconds": 0.7
+   "seconds": 0.6
   },
   {
    "id": "kan",
@@ -139,7 +139,7 @@
    "ok": true,
    "count": 28,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.2
   },
   {
    "id": "maariv",
@@ -147,7 +147,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.5
   },
   {
    "id": "maariv_flash",
@@ -155,7 +155,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.2
   },
   {
    "id": "bbc",
@@ -163,7 +163,7 @@
    "ok": true,
    "count": 36,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "guardian",
@@ -179,7 +179,7 @@
    "ok": true,
    "count": 134,
    "error": null,
-   "seconds": 0.4
+   "seconds": 0.8
   },
   {
    "id": "france24",
@@ -187,7 +187,7 @@
    "ok": true,
    "count": 24,
    "error": null,
-   "seconds": 0.1
+   "seconds": 0.3
   },
   {
    "id": "npr",
@@ -195,7 +195,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.5
   },
   {
    "id": "geektime",
@@ -203,7 +203,7 @@
    "ok": true,
    "count": 30,
    "error": null,
-   "seconds": 2.9
+   "seconds": 2.0
   },
   {
    "id": "techcrunch",
@@ -219,7 +219,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.1
   },
   {
    "id": "mittr",
@@ -243,7 +243,7 @@
    "ok": true,
    "count": 10,
    "error": null,
-   "seconds": 1.3
+   "seconds": 1.5
   },
   {
    "id": "ars",
@@ -251,7 +251,7 @@
    "ok": true,
    "count": 20,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   },
   {
    "id": "openai",
@@ -259,7 +259,7 @@
    "ok": true,
    "count": 1418,
    "error": null,
-   "seconds": 0.5
+   "seconds": 0.7
   },
   {
    "id": "googleai",
@@ -270,20 +270,20 @@
    "seconds": 0.5
   }
  ],
- "new": 29,
- "extracted": 9,
+ "new": 28,
+ "extracted": 7,
  "clusters": 254,
  "removed_source_articles": 0,
  "excluded": 23,
  "extract_failed": 20,
  "translate": {
   "requests": 6,
-  "translated": 28,
-  "tokens": 16947,
+  "translated": 25,
+  "tokens": 15774,
   "errors": [],
   "skipped_no_key": false,
-  "pending_after": 216
+  "pending_after": 218
  },
- "pruned_bodies": 28,
- "seconds": 80.9
+ "pruned_bodies": 26,
+ "seconds": 80.2
 }
